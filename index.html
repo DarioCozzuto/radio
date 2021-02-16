@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+<title>Radio</title>
+<script>
+    function myFunction() {
+        if (form.radioBonifico.checked) {
+            alert("Hai scelto bonifico");
+        }
+
+        if (form.radioCartadiCredito.checked) {
+            alert("Hai scelto Carta di Credito");
+        }
+
+        if (form.radioContrassegno.checked) {
+            alert("Hai scelto Contrassegno");
+        }
+    }
+</script>
+<body>
+    <form name="form">
+        <h1>Form di pagamento</h1>
+        <h3>Scegli la modalità di pagamento </h3>
+              <label><input type="radio" id="radioBonifico" name="Radio" checked="true">Bonifico</label>
+              <br>
+              <label><input type="radio" id="radioCartadiCredito" name="Radio">Carta di Credito</label>
+              <br>
+              <label><input type="radio" id="radioContrassegno" name="Radio">Contrassegno</label>
+              <br>
+              <br>
+              <input type="submit" id="submit" value="Iscriviti" onclick="myFunction()"> 
+    </form>
+</body>
+</html> 
